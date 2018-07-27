@@ -1,0 +1,16 @@
+PODS:
+  - AViewController (0.1.0)
+
+DEPENDENCIES:
+  - AViewController (from `../`)
+
+EXTERNAL SOURCES:
+  AViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AViewController: 64b2e0d6a8f2b1bd23e101209c7ee98332386e44
+
+PODFILE CHECKSUM: 088f4a769d9e62d3a85c4d949870d44f08085589
+
+COCOAPODS: 1.5.3
