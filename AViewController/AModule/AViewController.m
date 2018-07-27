@@ -7,7 +7,7 @@
 //
 
 #import "AViewController.h"
-#import "CTMediator+ModuleBActions.h"
+//#import "CTMediator+ModuleBActions.h"
 
 @interface AViewController ()
 
@@ -28,8 +28,8 @@
 }
 
 - (void)gotoB{
-    UIViewController *vc = [[CTMediator sharedInstance] fetchBViewController];
-    [self.navigationController pushViewController:vc animated:YES];
+//    UIViewController *vc = [[CTMediator sharedInstance] fetchBViewController];
+//    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
