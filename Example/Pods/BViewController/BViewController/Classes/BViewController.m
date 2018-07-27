@@ -1,35 +1,33 @@
 //
-//  AViewController.m
+//  BViewController.m
 //  moduleTest
 //
 //  Created by lemon on 2018/7/27.
 //  Copyright © 2018年 Lemon. All rights reserved.
 //
 
-#import "AViewController.h"
-#import <BCategory/CTMediator+ModuleBActions.h>
+#import "BViewController.h"
 
-@interface AViewController ()
+@interface BViewController ()
 
 @end
 
-@implementation AViewController
+@implementation BViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = self.navTitle;
-    self.view.backgroundColor = [UIColor brownColor];
+    self.view.backgroundColor = [UIColor blueColor];
     UIButton *btn = [[UIButton alloc]init];
     btn.frame = CGRectMake(100, 100,100, 30);
-    [btn setTitle:@"去到B控制器" forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(gotoB) forControlEvents:UIControlEventTouchUpInside];
+    [btn setTitle:@"回到第一个控制器" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(gotoRootViewController) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
 }
 
-- (void)gotoB{
-    UIViewController *vc = [[CTMediator sharedInstance] fetchBViewController];
-    [self.navigationController pushViewController:vc animated:YES];
+- (void)gotoRootViewController{
+//    [self backToViewController:@"ViewController" animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

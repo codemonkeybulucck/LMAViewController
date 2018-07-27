@@ -1,0 +1,6 @@
+framework module BViewController {
+  umbrella header "BViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

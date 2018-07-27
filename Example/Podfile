@@ -1,11 +1,16 @@
 use_frameworks!
 
+source 'https://github.com/codemonkeybulucck/LMSpec.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+
 target 'AViewController_Example' do
   pod 'AViewController', :path => '../'
+  pod 'BCategory'
+  pod 'BViewController'
 
   target 'AViewController_Tests' do
     inherit! :search_paths
 
-    
   end
 end

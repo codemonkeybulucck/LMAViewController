@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20579212378727F74702413A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		20579212378727F74702413A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2892BBAE3AF156CE154B1FC8 /* Pods-AViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AViewController_Tests/Pods-AViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2E118CA56BA411D3E3102D18 /* Pods-AViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AViewController_Example/Pods-AViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3AFFC2F55D09CBD2985D04BE /* Pods_AViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,10 +60,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6C2F8CF8BA703875D183AECB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6C2F8CF8BA703875D183AECB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		884B9BCBC08EB099607B8861 /* AViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AViewController.podspec; path = ../AViewController.podspec; sourceTree = "<group>"; };
+		884B9BCBC08EB099607B8861 /* AViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AViewController.podspec; path = ../AViewController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A472EE4250693EC9832CCB42 /* Pods-AViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AViewController_Tests/Pods-AViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB01DEF2440E6E48805DB3E8 /* Pods_AViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB57F1FE60E774EFA155ECF3 /* Pods-AViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AViewController_Example/Pods-AViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,10 +302,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AViewController_Example/Pods-AViewController_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AViewController/AViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/BCategory/BCategory.framework",
+				"${BUILT_PRODUCTS_DIR}/BViewController/BViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/CTMediator/CTMediator.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BCategory.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CTMediator.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

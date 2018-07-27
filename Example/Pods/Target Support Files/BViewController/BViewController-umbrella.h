@@ -10,9 +10,9 @@
 #endif
 #endif
 
-#import "AViewController.h"
-#import "Target_AViewController.h"
+#import "BViewController.h"
+#import "Target_BViewController.h"
 
-FOUNDATION_EXPORT double AViewControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char AViewControllerVersionString[];
+FOUNDATION_EXPORT double BViewControllerVersionNumber;
+FOUNDATION_EXPORT const unsigned char BViewControllerVersionString[];
 

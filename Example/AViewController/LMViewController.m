@@ -7,6 +7,7 @@
 //
 
 #import "LMViewController.h"
+#import <AViewController/Target_AViewController.h>
 
 @interface LMViewController ()
 
@@ -18,6 +19,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    Target_AViewController *target = [[Target_AViewController alloc]init];
+    UIViewController *vc = [target Action_fetchAViewController:@{@"navTitle":@"ac"}];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

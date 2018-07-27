@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/AViewController/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-     s.dependency 'CTMediator'
+     s.dependency 'BCategory'
 end

@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "AViewController.h"
-#import "Target_AViewController.h"
+#import "CTMediator.h"
 
-FOUNDATION_EXPORT double AViewControllerVersionNumber;
-FOUNDATION_EXPORT const unsigned char AViewControllerVersionString[];
+FOUNDATION_EXPORT double CTMediatorVersionNumber;
+FOUNDATION_EXPORT const unsigned char CTMediatorVersionString[];
 

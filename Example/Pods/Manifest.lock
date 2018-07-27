@@ -1,16 +1,34 @@
 PODS:
-  - AViewController (0.1.0)
+  - AViewController (0.1.0):
+    - BCategory
+    - BViewController
+  - BCategory (0.1.0):
+    - CTMediator
+  - BViewController (0.1.0)
+  - CTMediator (18)
 
 DEPENDENCIES:
   - AViewController (from `../`)
+  - BCategory
+  - BViewController
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+  https://github.com/codemonkeybulucck/LMSpec.git:
+    - BCategory
+    - BViewController
 
 EXTERNAL SOURCES:
   AViewController:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AViewController: 64b2e0d6a8f2b1bd23e101209c7ee98332386e44
+  AViewController: aa4afe26bb23e90c76f63efe31c5d06aa2fb1499
+  BCategory: d003634735daff307ff0b9d78d3c9db346f50cf9
+  BViewController: 4df0bd296974c30530cc10fd134a06fc57c77282
+  CTMediator: 420e9d90f9f1fd740caf2238ed7ed64dc621c5b7
 
-PODFILE CHECKSUM: 088f4a769d9e62d3a85c4d949870d44f08085589
+PODFILE CHECKSUM: 201ded66a4d904b167b30fcaf67714965ca166a4
 
 COCOAPODS: 1.5.3
