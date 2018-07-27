@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AViewController_Example' do
+  pod 'AViewController', :path => '../'
+
+  target 'AViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
